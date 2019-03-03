@@ -1,0 +1,42 @@
+.map {
+    display: flex;
+    flex-direction: row;
+}
+
+.map__image {
+    width: 50%;
+}
+
+.map__image path {
+    fill: dodgerblue;
+    stroke: black;
+    stroke-width: 1px;
+    transition: fill .3s;
+}
+
+.map__image path:hover {
+    fill: deepskyblue;
+}
+
+.map__list{
+    width: 50%;
+}
+
+.map__list {
+    color: inherit;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.map__image .tooltip {
+    position: fixed;
+    border-radius: 1px;
+    color: black;
+    background-color: brown;
+    padding: .15em .5em;
+    display: inline;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}
